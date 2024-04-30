@@ -767,10 +767,10 @@ INLINE tcb_t * get_idle_tcb()
     return (tcb_t*)__idle_tcb;
 }
 
-INLINE tcb_t * get_dummy_tcb()
+INLINE const tcb_t * get_dummy_tcb()
 {
-    extern tcb_t *__dummy_tcb;
-    return (tcb_t*)__dummy_tcb;
+    extern const tcb_t *__dummy_tcb;
+    return (const tcb_t*)__dummy_tcb;
 }
 
 

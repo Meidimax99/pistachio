@@ -52,6 +52,11 @@ class rootnode_t;
  * array would (on a 32 bit address space) contain the values: 10, 12,
  * 16, 20, and 32.
  *
+ * 1MB 2^20 Byte
+ * 64KB  2^16
+ * ...
+ * 
+ * 
  */
 extern word_t mdb_pgshifts[];
 

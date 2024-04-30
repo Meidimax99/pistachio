@@ -1,0 +1,47 @@
+- `config.h`: Configuration options for the API.
+- `cpu.h`: CPU-related functions and definitions.
+- `exregs.cc`: Code related to handling extended registers.
+- `fpage.h`: Definitions and functions related to memory management and protection (fine-grained memory protection).
+- `generic-archfpage.h`: Architecture-specific definitions for fine-grained memory protection.
+- `generic-archmap.h`: Architecture-specific memory mapping definitions.
+- `generic-utcb.h`: Architecture-independent definitions for user-level thread control blocks.
+- `interrupt.cc`: Code related to interrupt handling.
+- `interrupt.h`: Definitions and functions related to interrupts.
+- `ipc.cc`: Inter-process communication implementation.
+- `ipc.h`: Inter-process communication interface.
+- `ipcx.cc`: Extended inter-process communication functions.
+- `kernelinterface.cc`: Interface for kernel-level functions.
+- `kernelinterface.h`: Header for kernel interface functions.
+- `kip.ldi`: Kernel Interface Page (KIP) linker description file.
+- `Makeconf`: Makefile configuration.
+- `memdesc.h`: Memory descriptor definitions.
+- `preempt.h`: Definitions and functions related to preemption.
+- `procdesc.h`: Process descriptor definitions.
+- `processor.cc`: Processor-related functions and definitions.
+- `queueing.h`: Definitions related to queuing mechanisms.
+- `queuestate.h`: State definitions for queues.
+- `resources.h`: Definitions related to resource management.
+- `sched-hs`: Scheduler implementation for hierarchical scheduling.
+    - `ktcb.h`: Kernel thread control block definitions.
+    - `schedule.cc`: Implementation of the hierarchical scheduler.
+    - `schedule_functions.h`: Functions for the hierarchical scheduler.
+    - `schedule.h`: Header for hierarchical scheduler.
+- `sched-rr`: Scheduler implementation for round-robin scheduling.
+    - `ktcb.h`: Kernel thread control block definitions.
+    - `schedule.cc`: Implementation of the round-robin scheduler.
+    - `schedule_functions.h`: Functions for the round-robin scheduler.
+    - `schedule.h`: Header for round-robin scheduler.
+- `schedule.cc`: Common scheduler functions.
+- `schedule.h`: Common scheduler definitions.
+- `sktcb.h`: System-level kernel thread control block definitions.
+- `smp.cc`: Symmetric Multiprocessing (SMP) related code.
+- `smp.h`: SMP related definitions.
+- `space.cc`: Address space management functions.
+- `space.h`: Address space management definitions.
+- `syscalls.h`: System call interface definitions.
+- `tcb.h`: Thread control block definitions.
+- `thread.cc`: Thread management functions.
+- `thread.h`: Thread management definitions.
+- `threadstate.h`: Thread state definitions.
+- `types.h`: Common type definitions.
+- `user.h`: Definitions for user-space interactions.
