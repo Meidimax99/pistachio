@@ -1,0 +1,263 @@
+grep: warning: stray \ before #
+../user/Mk/l4.build.mk:57: warning: ignoring prerequisites on suffix rule definition
+../user/Mk/l4.build.mk:61: warning: ignoring prerequisites on suffix rule definition
+../user/Mk/l4.build.mk:65: warning: ignoring prerequisites on suffix rule definition
+make[1]: Entering directory '/home/max/code/ba/pistachio_2/build-user-x86/lib'
+grep: warning: stray \ before #
+../../user/Mk/l4.build.mk:57: warning: ignoring prerequisites on suffix rule definition
+../../user/Mk/l4.build.mk:61: warning: ignoring prerequisites on suffix rule definition
+../../user/Mk/l4.build.mk:65: warning: ignoring prerequisites on suffix rule definition
+make[2]: Entering directory '/home/max/code/ba/pistachio_2/build-user-x86/lib/l4'
+grep: warning: stray \ before #
+../../../user/Mk/l4.build.mk:57: warning: ignoring prerequisites on suffix rule definition
+../../../user/Mk/l4.build.mk:61: warning: ignoring prerequisites on suffix rule definition
+../../../user/Mk/l4.build.mk:65: warning: ignoring prerequisites on suffix rule definition
+===> Making dependencies in lib/l4
+grep: warning: stray \ before #
+../../../user/Mk/l4.build.mk:57: warning: ignoring prerequisites on suffix rule definition
+../../../user/Mk/l4.build.mk:61: warning: ignoring prerequisites on suffix rule definition
+../../../user/Mk/l4.build.mk:65: warning: ignoring prerequisites on suffix rule definition
+===> lib/l4/debug.cc
+gcc -x c++ -I../../../user/include -I../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include  -nostdinc -g -O2 -m64 -mno-red-zone -w -O2 -g -Wall -Wshadow  -Wconversion -fno-exceptions -w -nostdinc -fno-builtin -c ../../../user/lib/l4/debug.cc -o debug.o
+===> lib/l4/amd64.cc
+gcc -x c++ -I../../../user/include -I../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include  -nostdinc -g -O2 -m64 -mno-red-zone -w -O2 -g -Wall -Wshadow  -Wconversion -fno-exceptions -w -nostdinc -fno-builtin -c ../../../user/lib/l4/amd64.cc -o amd64.o
+===> Linking lib/l4/libl4.a
+ar cru libl4.a  debug.o amd64.o  
+ranlib libl4.a
+cp libl4.a ../../lib/libl4.a
+make[2]: Leaving directory '/home/max/code/ba/pistachio_2/build-user-x86/lib/l4'
+make[2]: Entering directory '/home/max/code/ba/pistachio_2/build-user-x86/lib/io'
+grep: warning: stray \ before #
+../../../user/Mk/l4.build.mk:57: warning: ignoring prerequisites on suffix rule definition
+../../../user/Mk/l4.build.mk:61: warning: ignoring prerequisites on suffix rule definition
+../../../user/Mk/l4.build.mk:65: warning: ignoring prerequisites on suffix rule definition
+===> Making dependencies in lib/io
+grep: warning: stray \ before #
+../../../user/Mk/l4.build.mk:57: warning: ignoring prerequisites on suffix rule definition
+../../../user/Mk/l4.build.mk:61: warning: ignoring prerequisites on suffix rule definition
+../../../user/Mk/l4.build.mk:65: warning: ignoring prerequisites on suffix rule definition
+===> lib/io/get_hex.cc
+gcc -x c++ -I../../../user/include -I../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include  -nostdinc -g -O2 -m64 -mno-red-zone -w -O2 -g -Wall -Wshadow  -Wconversion -fno-exceptions -w -nostdinc -fno-builtin -c ../../../user/lib/io/get_hex.cc -o get_hex.o
+===> lib/io/print.cc
+gcc -x c++ -I../../../user/include -I../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include  -nostdinc -g -O2 -m64 -mno-red-zone -w -O2 -g -Wall -Wshadow  -Wconversion -fno-exceptions -w -nostdinc -fno-builtin -c ../../../user/lib/io/print.cc -o print.o
+===> lib/io/amd64.cc
+gcc -x c++ -I../../../user/include -I../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include  -nostdinc -g -O2 -m64 -mno-red-zone -w -O2 -g -Wall -Wshadow  -Wconversion -fno-exceptions -w -nostdinc -fno-builtin -c ../../../user/lib/io/amd64.cc -o amd64.o
+===> Linking lib/io/libio.a
+ar cru libio.a  get_hex.o print.o amd64.o  
+ranlib libio.a
+cp libio.a ../../lib/libio.a
+make[2]: Leaving directory '/home/max/code/ba/pistachio_2/build-user-x86/lib/io'
+make[1]: Leaving directory '/home/max/code/ba/pistachio_2/build-user-x86/lib'
+make[1]: Entering directory '/home/max/code/ba/pistachio_2/build-user-x86/serv'
+grep: warning: stray \ before #
+../../user/Mk/l4.build.mk:57: warning: ignoring prerequisites on suffix rule definition
+../../user/Mk/l4.build.mk:61: warning: ignoring prerequisites on suffix rule definition
+../../user/Mk/l4.build.mk:65: warning: ignoring prerequisites on suffix rule definition
+make[2]: Entering directory '/home/max/code/ba/pistachio_2/build-user-x86/serv/sigma0'
+grep: warning: stray \ before #
+../../../user/Mk/l4.build.mk:57: warning: ignoring prerequisites on suffix rule definition
+../../../user/Mk/l4.build.mk:61: warning: ignoring prerequisites on suffix rule definition
+../../../user/Mk/l4.build.mk:65: warning: ignoring prerequisites on suffix rule definition
+===> Making dependencies in serv/sigma0
+grep: warning: stray \ before #
+../../../user/Mk/l4.build.mk:57: warning: ignoring prerequisites on suffix rule definition
+../../../user/Mk/l4.build.mk:61: warning: ignoring prerequisites on suffix rule definition
+../../../user/Mk/l4.build.mk:65: warning: ignoring prerequisites on suffix rule definition
+===> serv/sigma0/crt0-amd64.S
+gcc -I../../../user/include -I../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include  -nostdinc -g -O2 -m64 -mno-red-zone -w -O2 -g -Wall -Wshadow  -Wconversion -c ../../../user/serv/sigma0/crt0-amd64.S -o crt0-amd64.o
+===> serv/sigma0/sigma0_io.cc
+===> serv/sigma0/sigma0.cc
+===> serv/sigma0/sigma0_mem.cc
+gcc -x c++ -I../../../user/include -I../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include  -nostdinc -g -O2 -m64 -mno-red-zone -w -O2 -g -Wall -Wshadow  -Wconversion -fno-exceptions -w -nostdinc -fno-builtin -c ../../../user/serv/sigma0/sigma0_io.cc -o sigma0_io.o
+gcc -x c++ -I../../../user/include -I../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include  -nostdinc -g -O2 -m64 -mno-red-zone -w -O2 -g -Wall -Wshadow  -Wconversion -fno-exceptions -w -nostdinc -fno-builtin -c ../../../user/serv/sigma0/sigma0.cc -o sigma0.o
+gcc -x c++ -I../../../user/include -I../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include  -nostdinc -g -O2 -m64 -mno-red-zone -w -O2 -g -Wall -Wshadow  -Wconversion -fno-exceptions -w -nostdinc -fno-builtin -c ../../../user/serv/sigma0/sigma0_mem.cc -o sigma0_mem.o
+===> serv/sigma0/region.cc
+gcc -x c++ -I../../../user/include -I../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include  -nostdinc -g -O2 -m64 -mno-red-zone -w -O2 -g -Wall -Wshadow  -Wconversion -fno-exceptions -w -nostdinc -fno-builtin -c ../../../user/serv/sigma0/region.cc -o region.o
+===> Linking serv/sigma0/sigma0
+ld -e_start -N -L../../lib -L/usr/lib64/gcc/x86_64-suse-linux/13 -nostdlib  -melf_x86_64  -Ttext=00f00000 crt0-amd64.o sigma0_io.o sigma0.o sigma0_mem.o region.o    -ll4 -lio -lgcc -o sigma0
+ld: warning: crt0-amd64.o: missing .note.GNU-stack section implies executable stack
+ld: NOTE: This behaviour is deprecated and will be removed in a future version of the linker
+ld: warning: sigma0 has a LOAD segment with RWX permissions
+make[2]: Leaving directory '/home/max/code/ba/pistachio_2/build-user-x86/serv/sigma0'
+make[1]: Leaving directory '/home/max/code/ba/pistachio_2/build-user-x86/serv'
+make[1]: Entering directory '/home/max/code/ba/pistachio_2/build-user-x86/apps'
+grep: warning: stray \ before #
+../../user/Mk/l4.build.mk:57: warning: ignoring prerequisites on suffix rule definition
+../../user/Mk/l4.build.mk:61: warning: ignoring prerequisites on suffix rule definition
+../../user/Mk/l4.build.mk:65: warning: ignoring prerequisites on suffix rule definition
+make[2]: Entering directory '/home/max/code/ba/pistachio_2/build-user-x86/apps/bench'
+grep: warning: stray \ before #
+../../../user/Mk/l4.build.mk:57: warning: ignoring prerequisites on suffix rule definition
+../../../user/Mk/l4.build.mk:61: warning: ignoring prerequisites on suffix rule definition
+../../../user/Mk/l4.build.mk:65: warning: ignoring prerequisites on suffix rule definition
+make[3]: Entering directory '/home/max/code/ba/pistachio_2/build-user-x86/apps/bench/pingpong'
+grep: warning: stray \ before #
+../../../../user/Mk/l4.build.mk:57: warning: ignoring prerequisites on suffix rule definition
+../../../../user/Mk/l4.build.mk:61: warning: ignoring prerequisites on suffix rule definition
+../../../../user/Mk/l4.build.mk:65: warning: ignoring prerequisites on suffix rule definition
+===> Making dependencies in apps/bench/pingpong
+grep: warning: stray \ before #
+../../../../user/Mk/l4.build.mk:57: warning: ignoring prerequisites on suffix rule definition
+../../../../user/Mk/l4.build.mk:61: warning: ignoring prerequisites on suffix rule definition
+../../../../user/Mk/l4.build.mk:65: warning: ignoring prerequisites on suffix rule definition
+===> apps/bench/pingpong/crt0-amd64.S
+gcc -I../../../../user/include -I../../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include   -m32 -fno-exceptions -x c++ -c ../../../../user/apps/bench/pingpong/pingpong-amd64-32.cc -o pingpong-amd64-32.o
+gcc -I../../../../user/include -I../../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include  -nostdinc -g -O2 -m64 -mno-red-zone -w -O2 -g -Wall -Wshadow  -Wconversion -c ../../../../user/apps/bench/pingpong/crt0-amd64.S -o crt0-amd64.o
+===> apps/bench/pingpong/pingpong.cc
+gcc -x c++ -I../../../../user/include -I../../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include  -nostdinc -g -O2 -m64 -mno-red-zone -w -O2 -g -Wall -Wshadow  -Wconversion -fno-exceptions -w -nostdinc -fno-builtin -c ../../../../user/apps/bench/pingpong/pingpong.cc -o pingpong.o
+objcopy -g -O elf64-x86-64 pingpong-amd64-32.o pingpong-amd64-32.o
+===> Linking apps/bench/pingpong/pingpong
+ld -e_start -N -L../../../lib -L/usr/lib64/gcc/x86_64-suse-linux/13 -nostdlib  -melf_x86_64  -Ttext=01000000 crt0-amd64.o pingpong.o pingpong-amd64-32.o    -ll4 -lio -lgcc -o pingpong
+ld: warning: crt0-amd64.o: missing .note.GNU-stack section implies executable stack
+ld: NOTE: This behaviour is deprecated and will be removed in a future version of the linker
+ld: warning: pingpong has a LOAD segment with RWX permissions
+make[3]: Leaving directory '/home/max/code/ba/pistachio_2/build-user-x86/apps/bench/pingpong'
+make[2]: Leaving directory '/home/max/code/ba/pistachio_2/build-user-x86/apps/bench'
+make[2]: Entering directory '/home/max/code/ba/pistachio_2/build-user-x86/apps/grabmem'
+grep: warning: stray \ before #
+../../../user/Mk/l4.build.mk:57: warning: ignoring prerequisites on suffix rule definition
+../../../user/Mk/l4.build.mk:61: warning: ignoring prerequisites on suffix rule definition
+../../../user/Mk/l4.build.mk:65: warning: ignoring prerequisites on suffix rule definition
+===> Making dependencies in apps/grabmem
+grep: warning: stray \ before #
+../../../user/Mk/l4.build.mk:57: warning: ignoring prerequisites on suffix rule definition
+../../../user/Mk/l4.build.mk:61: warning: ignoring prerequisites on suffix rule definition
+../../../user/Mk/l4.build.mk:65: warning: ignoring prerequisites on suffix rule definition
+===> apps/grabmem/crt0-amd64.S
+gcc -I../../../user/include -I../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include  -nostdinc -g -O2 -m64 -mno-red-zone -w -O2 -g -Wall -Wshadow  -Wconversion -c ../../../user/apps/grabmem/crt0-amd64.S -o crt0-amd64.o
+===> apps/grabmem/grabmem.cc
+gcc -x c++ -I../../../user/include -I../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include  -nostdinc -g -O2 -m64 -mno-red-zone -w -O2 -g -Wall -Wshadow  -Wconversion -fno-exceptions -w -nostdinc -fno-builtin -c ../../../user/apps/grabmem/grabmem.cc -o grabmem.o
+===> Linking apps/grabmem/grabmem
+ld -e_start -N -L../../lib -L/usr/lib64/gcc/x86_64-suse-linux/13 -nostdlib  -melf_x86_64  -Ttext=01000000 crt0-amd64.o grabmem.o    -ll4 -lio -lgcc -o grabmem
+ld: warning: crt0-amd64.o: missing .note.GNU-stack section implies executable stack
+ld: NOTE: This behaviour is deprecated and will be removed in a future version of the linker
+ld: warning: grabmem has a LOAD segment with RWX permissions
+make[2]: Leaving directory '/home/max/code/ba/pistachio_2/build-user-x86/apps/grabmem'
+make[2]: Entering directory '/home/max/code/ba/pistachio_2/build-user-x86/apps/l4test'
+grep: warning: stray \ before #
+../../../user/Mk/l4.build.mk:57: warning: ignoring prerequisites on suffix rule definition
+../../../user/Mk/l4.build.mk:61: warning: ignoring prerequisites on suffix rule definition
+../../../user/Mk/l4.build.mk:65: warning: ignoring prerequisites on suffix rule definition
+===> Making dependencies in apps/l4test
+grep: warning: stray \ before #
+../../../user/Mk/l4.build.mk:57: warning: ignoring prerequisites on suffix rule definition
+../../../user/Mk/l4.build.mk:61: warning: ignoring prerequisites on suffix rule definition
+../../../user/Mk/l4.build.mk:65: warning: ignoring prerequisites on suffix rule definition
+===> apps/l4test/amd64/crt0.S
+gcc -I../../../user/include -I../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include  -I../../../user/apps/l4test/amd64 -nostdinc -g -O2 -m64 -mno-red-zone -w -O2 -g -Wall -Wshadow  -Wconversion -c ../../../user/apps/l4test/amd64/crt0.S -o amd64/crt0.o
+===> apps/l4test/ipc-string.cc
+===> apps/l4test/ipc.cc
+===> apps/l4test/string.cc
+gcc -x c++ -I../../../user/include -I../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include  -I../../../user/apps/l4test/amd64 -fno-builtin -nostdinc -c ../../../user/apps/l4test/ipc-string.cc -o ipc-string.o
+gcc -x c++ -I../../../user/include -I../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include  -I../../../user/apps/l4test/amd64 -fno-builtin -nostdinc -c ../../../user/apps/l4test/ipc.cc -o ipc.o
+===> apps/l4test/threads.cc
+===> apps/l4test/menu.cc
+gcc -x c++ -I../../../user/include -I../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include  -I../../../user/apps/l4test/amd64 -fno-builtin -nostdinc -c ../../../user/apps/l4test/string.cc -o string.o
+gcc -x c++ -I../../../user/include -I../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include  -I../../../user/apps/l4test/amd64 -fno-builtin -nostdinc -c ../../../user/apps/l4test/threads.cc -o threads.o
+gcc -x c++ -I../../../user/include -I../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include  -I../../../user/apps/l4test/amd64 -fno-builtin -nostdinc -c ../../../user/apps/l4test/menu.cc -o menu.o
+../../../user/apps/l4test/string.cc: In function ‘void* memmove(void*, const void*, size_t)’:
+../../../user/apps/l4test/string.cc:101:1: warning: no return statement in function returning non-void [-Wreturn-type]
+  101 | }
+      | ^
+===> apps/l4test/ipc-pf.cc
+gcc -x c++ -I../../../user/include -I../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include  -I../../../user/apps/l4test/amd64 -fno-builtin -nostdinc -c ../../../user/apps/l4test/ipc-pf.cc -o ipc-pf.o
+===> apps/l4test/main.cc
+===> apps/l4test/assert.cc
+gcc -x c++ -I../../../user/include -I../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include  -I../../../user/apps/l4test/amd64 -fno-builtin -nostdinc -c ../../../user/apps/l4test/main.cc -o main.o
+===> apps/l4test/ipc-smp.cc
+gcc -x c++ -I../../../user/include -I../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include  -I../../../user/apps/l4test/amd64 -fno-builtin -nostdinc -c ../../../user/apps/l4test/assert.cc -o assert.o
+gcc -x c++ -I../../../user/include -I../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include  -I../../../user/apps/l4test/amd64 -fno-builtin -nostdinc -c ../../../user/apps/l4test/ipc-smp.cc -o ipc-smp.o
+===> apps/l4test/mem.cc
+gcc -x c++ -I../../../user/include -I../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include  -I../../../user/apps/l4test/amd64 -fno-builtin -nostdinc -c ../../../user/apps/l4test/mem.cc -o mem.o
+===> apps/l4test/sig0.cc
+gcc -x c++ -I../../../user/include -I../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include  -I../../../user/apps/l4test/amd64 -fno-builtin -nostdinc -c ../../../user/apps/l4test/sig0.cc -o sig0.o
+===> apps/l4test/kip.cc
+gcc -x c++ -I../../../user/include -I../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include  -I../../../user/apps/l4test/amd64 -fno-builtin -nostdinc -c ../../../user/apps/l4test/kip.cc -o kip.o
+../../../user/apps/l4test/kip.cc:55:1: warning: ‘typedef’ was ignored in this declaration
+   55 | typedef struct kid_list_t { L4_Word_t id; L4_Word_t subid; const char *kernel; const char * supplier; };
+      | ^~~~~~~
+../../../user/apps/l4test/kip.cc:72:1: warning: ‘typedef’ was ignored in this declaration
+   72 | typedef struct api_list_t { L4_Word_t version; L4_Word_t subversion; const char *api; };
+      | ^~~~~~~
+===> apps/l4test/tcontrol.cc
+===> apps/l4test/schedule.cc
+gcc -x c++ -I../../../user/include -I../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include  -I../../../user/apps/l4test/amd64 -fno-builtin -nostdinc -c ../../../user/apps/l4test/schedule.cc -o schedule.o
+gcc -x c++ -I../../../user/include -I../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include  -I../../../user/apps/l4test/amd64 -fno-builtin -nostdinc -c ../../../user/apps/l4test/tcontrol.cc -o tcontrol.o
+===> apps/l4test/amd64/help.cc
+gcc -x c++ -I../../../user/include -I../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include  -I../../../user/apps/l4test/amd64 -fno-builtin -nostdinc -c ../../../user/apps/l4test/amd64/help.cc -o amd64/help.o
+===> apps/l4test/exreg.cc
+===> apps/l4test/amd64/tests.cc
+gcc -x c++ -I../../../user/include -I../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include  -I../../../user/apps/l4test/amd64 -fno-builtin -nostdinc -c ../../../user/apps/l4test/exreg.cc -o exreg.o
+gcc -x c++ -I../../../user/include -I../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include  -I../../../user/apps/l4test/amd64 -fno-builtin -nostdinc -c ../../../user/apps/l4test/amd64/tests.cc -o amd64/tests.o
+===> Linking apps/l4test/l4test
+ld -e_start -N -L../../lib -L/usr/lib64/gcc/x86_64-suse-linux/13 -nostdlib  -melf_x86_64  -Ttext=01000000 amd64/crt0.o main.o assert.o menu.o threads.o string.o ipc.o ipc-string.o ipc-pf.o ipc-smp.o kip.o mem.o sig0.o exreg.o tcontrol.o schedule.o amd64/help.o amd64/tests.o    -ll4 -lio -lgcc -o l4test
+ld: warning: amd64/crt0.o: missing .note.GNU-stack section implies executable stack
+ld: NOTE: This behaviour is deprecated and will be removed in a future version of the linker
+ld: warning: l4test has a LOAD segment with RWX permissions
+make[2]: Leaving directory '/home/max/code/ba/pistachio_2/build-user-x86/apps/l4test'
+make[1]: Leaving directory '/home/max/code/ba/pistachio_2/build-user-x86/apps'
+make[1]: Entering directory '/home/max/code/ba/pistachio_2/build-user-x86/util'
+grep: warning: stray \ before #
+../../user/Mk/l4.build.mk:57: warning: ignoring prerequisites on suffix rule definition
+../../user/Mk/l4.build.mk:61: warning: ignoring prerequisites on suffix rule definition
+../../user/Mk/l4.build.mk:65: warning: ignoring prerequisites on suffix rule definition
+make[2]: Entering directory '/home/max/code/ba/pistachio_2/build-user-x86/util/kickstart'
+grep: warning: stray \ before #
+../../../user/Mk/l4.build.mk:57: warning: ignoring prerequisites on suffix rule definition
+../../../user/Mk/l4.build.mk:61: warning: ignoring prerequisites on suffix rule definition
+../../../user/Mk/l4.build.mk:65: warning: ignoring prerequisites on suffix rule definition
+===> Making dependencies in util/kickstart
+cat: .revision: No such file or directory
+grep: warning: stray \ before #
+../../../user/Mk/l4.build.mk:57: warning: ignoring prerequisites on suffix rule definition
+../../../user/Mk/l4.build.mk:61: warning: ignoring prerequisites on suffix rule definition
+../../../user/Mk/l4.build.mk:65: warning: ignoring prerequisites on suffix rule definition
+===> Making util/kickstart/.revision
+===> util/kickstart/crt0-amd64.S
+gcc -I../../../user/include -I../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include -I../../../user/lib/io -I../../../user/util/kickstart -DALSO_ELF64 -DALSO_BOOTINFO64  -nostdinc -g -O2 -m64 -mno-red-zone -w -O2 -g -Wall -Wshadow  -Wconversion -fno-builtin -DREVISION="`cat .revision`" -O2   -c ../../../user/util/kickstart/crt0-amd64.S -o crt0-amd64.o
+make[3]: Entering directory '/home/max/code/ba/pistachio_2/build-user-x86/util/kickstart'
+===> util/kickstart/kickstart.cc
+gcc -x c++ -I../../../user/include -I../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include -I../../../user/lib/io -I../../../user/util/kickstart -DALSO_ELF64 -DALSO_BOOTINFO64  -nostdinc -g -O2 -m64 -mno-red-zone -w -O2 -g -Wall -Wshadow  -Wconversion -fno-builtin -DREVISION="`cat .revision`" -O2   -fno-exceptions -w -nostdinc -fno-builtin -c ../../../user/util/kickstart/kickstart.cc -o kickstart.o
+===> util/kickstart/lib.cc
+grep: gcc -x c++ -I../../../user/include -I../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include -I../../../user/lib/io -I../../../user/util/kickstart -DALSO_ELF64 -DALSO_BOOTINFO64  -nostdinc -g -O2 -m64 -mno-red-zone -w -O2 -g -Wall -Wshadow  -Wconversion -fno-builtin -DREVISION="`cat .revision`" -O2   -fno-exceptions -w -nostdinc -fno-builtin -c ../../../user/util/kickstart/lib.cc -o lib.o
+warning: stray \ before #
+===> util/kickstart/bootinfo.cc
+gcc -x c++ -I../../../user/include -I../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include -I../../../user/lib/io -I../../../user/util/kickstart -DALSO_ELF64 -DALSO_BOOTINFO64  -nostdinc -g -O2 -m64 -mno-red-zone -w -O2 -g -Wall -Wshadow  -Wconversion -fno-builtin -DREVISION="`cat .revision`" -O2   -fno-exceptions -w -nostdinc -fno-builtin -c ../../../user/util/kickstart/bootinfo.cc -o bootinfo.o
+===> util/kickstart/amd64.cc
+===> util/kickstart/elf.cc
+gcc -x c++ -I../../../user/include -I../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include -I../../../user/lib/io -I../../../user/util/kickstart -DALSO_ELF64 -DALSO_BOOTINFO64  -nostdinc -g -O2 -m64 -mno-red-zone -w -O2 -g -Wall -Wshadow  -Wconversion -fno-builtin -DREVISION="`cat .revision`" -O2   -fno-exceptions -w -nostdinc -fno-builtin -c ../../../user/util/kickstart/amd64.cc -o amd64.o
+gcc -x c++ -I../../../user/include -I../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include -I../../../user/lib/io -I../../../user/util/kickstart -DALSO_ELF64 -DALSO_BOOTINFO64  -nostdinc -g -O2 -m64 -mno-red-zone -w -O2 -g -Wall -Wshadow  -Wconversion -fno-builtin -DREVISION="`cat .revision`" -O2   -fno-exceptions -w -nostdinc -fno-builtin -c ../../../user/util/kickstart/elf.cc -o elf.o
+../../../user/Mk/l4.build.mk:57: warning: ignoring prerequisites on suffix rule definition
+../../../user/Mk/l4.build.mk:61: warning: ignoring prerequisites on suffix rule definition
+../../../user/Mk/l4.build.mk:65: warning: ignoring prerequisites on suffix rule definition
+===> get_hex32.cc
+gcc -x c++ -I../../../user/include -I../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include -I../../../user/lib/io -I../../../user/util/kickstart -DALSO_ELF64 -DALSO_BOOTINFO64  -nostdinc -g -O2 -m64 -mno-red-zone -w -O2 -g -Wall -Wshadow  -Wconversion -fno-builtin -DREVISION="`cat .revision`" -O2   -fno-exceptions -w -nostdinc -fno-builtin -c get_hex32.cc -o get_hex32.o
+===> print32.cc
+gcc -x c++ -I../../../user/include -I../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include -I../../../user/lib/io -I../../../user/util/kickstart -DALSO_ELF64 -DALSO_BOOTINFO64  -nostdinc -g -O2 -m64 -mno-red-zone -w -O2 -g -Wall -Wshadow  -Wconversion -fno-builtin -DREVISION="`cat .revision`" -O2   -fno-exceptions -w -nostdinc -fno-builtin -c print32.cc -o print32.o
+===> util/kickstart/mbi-amd64.cc
+===> util/kickstart/mbi.cc
+gcc -x c++ -I../../../user/include -I../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include -I../../../user/lib/io -I../../../user/util/kickstart -DALSO_ELF64 -DALSO_BOOTINFO64  -nostdinc -g -O2 -m64 -mno-red-zone -w -O2 -g -Wall -Wshadow  -Wconversion -fno-builtin -DREVISION="`cat .revision`" -O2   -fno-exceptions -w -nostdinc -fno-builtin -c ../../../user/util/kickstart/mbi-amd64.cc -o mbi-amd64.o
+gcc -x c++ -I../../../user/include -I../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include -I../../../user/lib/io -I../../../user/util/kickstart -DALSO_ELF64 -DALSO_BOOTINFO64  -nostdinc -g -O2 -m64 -mno-red-zone -w -O2 -g -Wall -Wshadow  -Wconversion -fno-builtin -DREVISION="`cat .revision`" -O2   -fno-exceptions -w -nostdinc -fno-builtin -c ../../../user/util/kickstart/mbi.cc -o mbi.o
+===> util/kickstart/kipmgr.cc
+gcc -x c++ -I../../../user/include -I../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include -I../../../user/lib/io -I../../../user/util/kickstart -DALSO_ELF64 -DALSO_BOOTINFO64  -nostdinc -g -O2 -m64 -mno-red-zone -w -O2 -g -Wall -Wshadow  -Wconversion -fno-builtin -DREVISION="`cat .revision`" -O2   -fno-exceptions -w -nostdinc -fno-builtin -c ../../../user/util/kickstart/kipmgr.cc -o kipmgr.o
+===> util/kickstart/mbi-loader.cc
+gcc -x c++ -I../../../user/include -I../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include -I../../../user/lib/io -I../../../user/util/kickstart -DALSO_ELF64 -DALSO_BOOTINFO64  -nostdinc -g -O2 -m64 -mno-red-zone -w -O2 -g -Wall -Wshadow  -Wconversion -fno-builtin -DREVISION="`cat .revision`" -O2   -fno-exceptions -w -nostdinc -fno-builtin -c ../../../user/util/kickstart/mbi-loader.cc -o mbi-loader.o
+===> amd6432.cc
+gcc -x c++ -I../../../user/include -I../.. -I/usr/lib64/gcc/x86_64-suse-linux/13/include -I../../../user/lib/io -I../../../user/util/kickstart -DALSO_ELF64 -DALSO_BOOTINFO64  -nostdinc -g -O2 -m64 -mno-red-zone -w -O2 -g -Wall -Wshadow  -Wconversion -fno-builtin -DREVISION="`cat .revision`" -O2   -fno-exceptions -w -nostdinc -fno-builtin -c amd6432.cc -o amd6432.o
+===> Linking util/kickstart/libio32.a
+ar cru libio32.a get_hex32.o print32.o amd6432.o
+ranlib libio32.a
+make[3]: Leaving directory '/home/max/code/ba/pistachio_2/build-user-x86/util/kickstart'
+===> Linking util/kickstart/kickstart
+ld -e_start -N -L../../lib -L/usr/lib64/gcc/x86_64-suse-linux/13 -nostdlib  -melf_x86_64 -L. -L../../lib/io -Ttext=00100000 -L../../../user/util/kickstart -Tkickstart.ld  crt0-amd64.o kickstart.o kipmgr.o elf.o lib.o bootinfo.o amd64.o mbi.o mbi-amd64.o mbi-loader.o    -lio  -o kickstart
+ld: warning: crt0-amd64.o: missing .note.GNU-stack section implies executable stack
+ld: NOTE: This behaviour is deprecated and will be removed in a future version of the linker
+ld: warning: kickstart has a LOAD segment with RWX permissions
+make[2]: Leaving directory '/home/max/code/ba/pistachio_2/build-user-x86/util/kickstart'
+make[1]: Leaving directory '/home/max/code/ba/pistachio_2/build-user-x86/util'
+make[1]: Entering directory '/home/max/code/ba/pistachio_2/build-user-x86/contrib'
+grep: warning: stray \ before #
+../../user/Mk/l4.build.mk:57: warning: ignoring prerequisites on suffix rule definition
+../../user/Mk/l4.build.mk:61: warning: ignoring prerequisites on suffix rule definition
+../../user/Mk/l4.build.mk:65: warning: ignoring prerequisites on suffix rule definition
+make[1]: Leaving directory '/home/max/code/ba/pistachio_2/build-user-x86/contrib'

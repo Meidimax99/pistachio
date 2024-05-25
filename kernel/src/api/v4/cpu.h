@@ -55,14 +55,15 @@ private:
 public:
     static word_t count;
     static cpu_t * get(cpuid_t cpuid) {
-	return &descriptors[cpuid];
+	    return &descriptors[cpuid];
     }
 
     static bool add_cpu(word_t id) {
-	if (count >= CONFIG_SMP_MAX_CPUS)
-	    return false;
-	descriptors[count++].id = id;
-	return true;
+        if (count >= CONFIG_SMP_MAX_CPUS) {
+            return false;
+        }
+        descriptors[count++].id = id;
+        return true;
     }
 };
 

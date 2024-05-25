@@ -32,8 +32,7 @@
 
 #include "string.h"
 
-int
-strlen( const char *str )
+int strlen( const char *str )
 {
 	int len = 0;
 	while(*str != '\0')
@@ -90,5 +89,14 @@ int strcmp_of( const char *str_of, const char *search )
 	return 1;
 
     return 0;
+}
+
+typedef unsigned long size_t;
+
+void *memmove(void *dst, const void *src, size_t len) {
+	unsigned char *d=(unsigned char *)dst;
+	unsigned char *s=(unsigned char *)src;
+
+	while(len--) *d++ = *s++;
 }
 

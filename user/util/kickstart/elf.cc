@@ -36,6 +36,8 @@
 #include "elf.h"
 #include "lib.h"
 
+#define ALSO_ELF64
+
 #if defined(L4_32BIT)
 #define BI_NS BI32
 #elif defined(L4_64BIT)
@@ -52,24 +54,30 @@ bool elf_load32 (L4_Word_t file_start,
 bool elf_find_sections32 (L4_Word_t addr,
 			  BI_NS::L4_Boot_SimpleExec_t * exec);
 
-bool elf_load64 (L4_Word_t file_start,
-		 L4_Word_t file_end,
-		 L4_Word_t *memory_start,
-		 L4_Word_t *memory_end,
-		 L4_Word_t *entry,
-		 L4_MemCheck_Func_t check);
+// bool elf_load64 (L4_Word_t file_start,
+// 		 L4_Word_t file_end,
+// 		 L4_Word_t *memory_start,
+// 		 L4_Word_t *memory_end,
+// 		 L4_Word_t *entry,
+// 		 L4_MemCheck_Func_t check);
 
 bool elf_find_sections64 (L4_Word_t addr,
 			  BI_NS::L4_Boot_SimpleExec_t * exec);
 
 
 
-bool __elf_func(elf_load) (L4_Word_t file_start,
-			   L4_Word_t file_end,
-			   L4_Word_t *memory_start,
-			   L4_Word_t *memory_end,
-			   L4_Word_t *entry,
-			   L4_MemCheck_Func_t check)
+// bool __elf_func(elf_load) (L4_Word_t file_start,
+// 			   L4_Word_t file_end,
+// 			   L4_Word_t *memory_start,
+// 			   L4_Word_t *memory_end,
+// 			   L4_Word_t *entry,
+// 			   L4_MemCheck_Func_t check)
+bool elf_load64 (L4_Word_t file_start,
+		 L4_Word_t file_end,
+		 L4_Word_t *memory_start,
+		 L4_Word_t *memory_end,
+		 L4_Word_t *entry,
+		 L4_MemCheck_Func_t check)
 {
     // Pointer to ELF file header
     ehdr_t* eh = (ehdr_t*) file_start;
@@ -398,6 +406,7 @@ bool elf_find_sections (L4_Word_t addr,
 #define BI_NS2 BI64
 #endif
 
+#if 0
 #if defined(BI_NS2)
 bool elf_find_sections (L4_Word_t addr,
 			BI_NS2::L4_Boot_SimpleExec_t * exec)
@@ -430,6 +439,6 @@ bool elf_find_sections (L4_Word_t addr,
     return false;
 }
 #endif
-
+#endif
 
 #endif

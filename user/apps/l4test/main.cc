@@ -36,6 +36,7 @@
 #include <l4/kdebug.h>
 #include <l4io.h>
 #include <config.h>
+#include "string.h"
 
 /* for the current arch */
 #include <arch.h>

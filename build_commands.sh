@@ -3,8 +3,8 @@
 # to be run from the repo-root
 
 cd kernel
-make BUILDDIR=$(pwd)/../x86-kernel-build
+make BUILDDIR=$(pwd)/../build-kernel-x86
 
-cd ../x86-kernel-build
+cd ../build-kernel-x86
 make menuconfig
 make

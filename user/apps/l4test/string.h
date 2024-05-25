@@ -39,5 +39,6 @@ extern int strlen( const char *src );
 extern void strcpy( char *dst, const char *src );
 extern int strcmp( const char *str1, const char *str2 );
 extern int strcmp_of( const char *str_of, const char *search );
+extern void *memmove(void *dst, const void *src, unsigned long len);
 
 #endif	/* __PIGGYBACKER__INCLUDE__STRING_H__ */

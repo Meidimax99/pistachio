@@ -32,6 +32,7 @@
 #ifndef __KICKSTART__BOOTINFO_H__
 #define __KICKSTART__BOOTINFO_H__
 
+#define ALSO_BOOTINFO64
 #include <config.h>
 
 #include "mbi.h"

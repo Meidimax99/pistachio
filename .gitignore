@@ -3,3 +3,26 @@
 user/autom4te.cache/
 user/configure
 user/config.h.in
+
+
+# Build files
+*.a
+*.o
+
+*.ps
+*.aux
+*.gls
+*.log
+*.ind
+*.bbl
+*.blg
+*.bib
+*.dvi
+*.toc
+doc/sourcedoc/html
+doc/sourcedoc/include
+doc/sourcedoc/latex
+doc/notes/ppc.ps-build
+
+trash/
+fdsource/

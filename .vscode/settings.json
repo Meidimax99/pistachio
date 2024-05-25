@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "*.tal": "uxntal",
+        "limits": "cpp"
+    }
+}
