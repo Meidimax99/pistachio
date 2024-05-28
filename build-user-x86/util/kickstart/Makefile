@@ -70,11 +70,22 @@ CFLAGS_kickstart_ia32:= $(CFLAGS)
 ##
 SRCS_amd64=		$(SRCS_MBI) 
 OBJS_amd64+=		 #bootinfo64.o #elf64.o
-LIBS_amd64=		-lio
-CFLAGS_kickstart_amd64:=$(patsubst -m32, -m64, $(CFLAGS)) -O2  
+LIBS_amd64=		-lio32
+
+# NOTE
+# I previously changed this line to
+#	CFLAGS_kickstart_amd64:=$(patsubst -m32, -m64, $(CFLAGS)) -O2  
+# Because i thought that it does not make any sense to change all the `-m64` flags in `CFLAGS` to `-m32` 
+# since I wanted to create a 64 Bit kernel.
+# I simply thought that the configuration for 64 Bit was wrong as it was never tested
+# However, in the specific case of kickstart, it does make sense, because grub can not directly load 64 Bit kernels
+# This is where kickstart comes into play. Its is used to start into the actual 64 Bit kernel
+CFLAGS_kickstart_amd64:=$(patsubst -m64, -m32, $(CFLAGS)) -O2  
 CPPFLAGS_amd64= 	-I$(top_srcdir)/lib/io -I$(srcdir) \
 			-DALSO_ELF64 -DALSO_BOOTINFO64
-LDFLAGS_amd64=	-L. -L../../lib/io
+
+LDFLAGS_amd64=  -b elf32-i386 --oformat elf32-i386 -N -m elf_i386 -L.
+
 IO32FILES_amd64=	get_hex.cc print.cc $(ARCH).cc
 PROGRAM_DEPS_amd64=	$(top_builddir)/util/kickstart/libio32.a
 

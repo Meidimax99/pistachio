@@ -36,7 +36,10 @@
 #include "elf.h"
 #include "lib.h"
 
-#define ALSO_ELF64
+#undef ALSO_ELF64
+#define L4_64BIT
+#define ALSO_ELF32
+#undef L4_32BIT
 
 #if defined(L4_32BIT)
 #define BI_NS BI32
@@ -154,8 +157,10 @@ bool elf_load64 (L4_Word_t file_start,
 }
 
 
-bool __elf_func(elf_find_sections) (L4_Word_t addr,
-				    BI_NS::L4_Boot_SimpleExec_t * exec)
+// bool __elf_func(elf_find_sections) (L4_Word_t addr,
+// 				    BI_NS::L4_Boot_SimpleExec_t * exec)
+bool elf_find_sections64 (L4_Word_t addr,
+			  BI_NS::L4_Boot_SimpleExec_t * exec)
 {
     // Pointer to ELF file header
     ehdr_t * eh = (ehdr_t *) addr;
@@ -385,12 +390,10 @@ bool elf_find_sections (L4_Word_t addr,
 	// Not an ELF file.
         return false;
     }
-
 #if defined(L4_32BIT) || defined(ALSO_ELF32)
     if (eh->is_32bit ())
 	return elf_find_sections32 (addr, exec);
 #endif
-
 #if defined(L4_64BIT) || defined(ALSO_ELF64)
     if (eh->is_64bit ())
 	return elf_find_sections64 (addr, exec);
